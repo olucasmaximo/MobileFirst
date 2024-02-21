@@ -1,0 +1,38 @@
+.banner{
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    padding: 2.5em 2em;
+    
+}
+.banner-titulo{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.banner-texto{
+    font-weight: 500;
+    margin: 1em 0;
+}
+.banner-pesquisa{ 
+    border: 1px solid var(--branco); 
+    border-radius: 2em;
+    color: var(--branco);
+    padding: 1em;
+    background-color: transparent;
+    width: 100%;
+    font-family: var(--fonte-principal);
+    
+}
+.banner-pesquisa::placeholder{ /*config texto barra de pesquisa*/ 
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    text-align: center;
+    background: url(/img/Pesquisa.svg) no-repeat; /*seleciona lupa*/
+    background-position: 1em; /* determina a posicao da lupa*/
+
+}
+.banner-pesquisa:hover{
+    background-color: var(--branco);
+    color: var(--preto);
+}

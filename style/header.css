@@ -33,7 +33,7 @@
 
 }
 .container-botao{
-    display: none;
+    display: none; /*tira o input checkbox*/
 }
 
 .lista-menu{
