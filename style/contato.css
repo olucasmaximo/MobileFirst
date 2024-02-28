@@ -36,3 +36,27 @@
     background-color: var(--cor-de-fundo);
     
 }
+
+@media screen and (min-width:1024px) {
+    .contato-email{
+        width: 30%;
+        
+    }
+    .container-contato{
+        display: flex;
+        flex-direction: column;
+    }
+    .contato{
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;   
+        margin: 0em 25em;    
+    }
+    .contato-titulo{
+        font-size:1.8em;
+        font-weight: 700;
+    }
+    .contato-texto{
+        font-size: 1.1em;
+    }
+}

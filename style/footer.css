@@ -7,3 +7,9 @@
     color: var(--preto);
     
 }
+@media screen and (min-width:1024px) {
+    .rodape{
+        text-align: center;
+    }
+    
+}
