@@ -18,10 +18,10 @@
         
     }
     .opcoes-item{
-    
         padding: 0 1em;
         text-transform: uppercase;
     }
+    
     .opcoes-link{
         text-decoration: none;
         color: var(--preto);
@@ -79,20 +79,31 @@
 .container-botao{
     display: none; /*tira o input checkbox*/
 }
+.container-botao:checked~.container-label > .cabecalho-menu-hamburguer /* >  Seleciona elementos que estão dentro do elemento especificado antes do símbolo.*/{ /* para mudar a cor do menu ao clicar*/
+    background-image: url(/img/MenuAberto.svg);
+}
+.container-botao:checked~.container-label{ /* ~ Seleciona elementos que estão depois, mas não necessariamente em seguida, do elemento especificado antes do símbolo.*/
+    background: var(--azul-degrade);
+}
 
 .lista-menu{
     display: none; /*retira o display da lista*/
     position: absolute; /*permite que movimente de acordo com o atributo pai*/
     top: 100%; /*faz o menu sair do cabecalho*/
-    width: 60vw; /*vw: viewport width abre o menu em 60% da tela */
-    
-
+    width: 60vw; /*vw: viewport width abre o menu em 60% da tela */ 
 }
 .lista-menu-titulo,
 .lista-menu-item{
     padding: 1em; /*espacamento entre os botoes*/
-    background-color: var(--branco);
-     
+    background-color: var(--branco);   
+}
+.lista-menu-item:hover{
+    background: var(--azul-degrade);
+}
+.lista-menu-item:hover>.lista-menu-link{ /*alterar cores menu aberto*/
+    -webkit-text-fill-color: var(--branco); /**/
+    text-decoration: none;
+    
 }
 .lista-menu-titulo{
     color: var(--laranja);
@@ -108,6 +119,5 @@
     font-family: var(--fonte-principal);
     font-size: 1rem;
     line-height: 1rem; /*espacamento altura da linha*/
-    
-    
+
 }
